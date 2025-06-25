@@ -1,0 +1,89 @@
+body{
+  font-family: "Gabarito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar__1{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.navbar__1 img{
+    height: 50px;
+    border-radius: 50px;
+}
+.navbar__1__search input{
+    width: 475px ;
+    height: 25px ;
+    border: none;
+     
+}
+.navbar__1__search{
+    display: flex;
+    align-items: center;
+    height: 35px;
+    width: 520px;
+    border: solid black 1px;
+    border-radius: 30px;    
+}
+.navbar__1__search i{
+    margin-left: 5px;
+}
+.navbar__2{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+.navbar__2 button{
+    background-color: black;
+    color: aliceblue;
+   height: 30px;
+   border-radius: 10px;
+}
+.nav__catogories__hovervisib{
+    
+    margin-top: 0;
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 14.5%;
+    gap: 15px;
+
+}
+/* Headding and where to section */
+.section__1__Heading{
+    text-align: center;
+    font-size: 30px;
+}   
+.section__1__catagory{
+    display: flex;
+    justify-content: center;
+    font-size: large;
+    gap: 50px;
+}
+.section__1__search{
+    text-align: center;
+    justify-content: center;   
+    align-items: center; 
+    height: 55px;
+    
+}
+.section__1__search input{
+    width: 800px;
+    height: 40px;
+    
+    border-radius: 20px;
+}
+.section__1__search button{
+    background-color: #84E9BD   ;
+    color: #000000;
+    height: 40px;
+    border-radius: 20px;
+    border: #84E9BD;
+}
