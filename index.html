@@ -1,76 +1,525 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Trip Advisor</title>
-    <link rel="stylesheet" href="./style.css">
-<!--Font from google fonts-->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Gabarito&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css" />
+    <!--Font from google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gabarito&display=swap"
+      rel="stylesheet"
+    />
 
     <!--Awsome cdn link-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-<body>
-    <!--Nav bar-->
-    <!--Need a search and same tempelate which should be visible in the nav once scrolled down -->
-    <div class="navbar">
-        <div class="navbar__1"> 
-            <img src="./Images/logo.png" alt="">
-            <h1>TripAdvisor</h1>
-            <div class="navbar__1__search">
-            <i class="fa-solid fa-magnifying-glass" style="color: #000000;"></i>
-            <input type="text">
-            </div>
-            
-            <div class="navbar__2">
-                <p>Discover</p>
-                <p>Trips</p>
-                <p>Review</p>
-                <p><i class="fa-solid fa-globe" style="color: #000000;"></i> | INR</p>
-                <button>Sign In</button>
-            </div>
-        </div>  
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <!--N av bar-->
+      <!--Need a search and same tempelate which should be visible in the nav once scrolled down -->
+      <div class="navbar">
+        <div class="navbar__1">
+          <img src="./Images/logo.png" alt="" />
+          <h1>TripAdvisor</h1>
+          <div class="navbar__1__search">
+            <i class="fa-solid fa-magnifying-glass" style="color: #000000"></i>
+            <input type="text" />
+          </div>
 
+          <div class="navbar__2">
+            <p>Discover</p>
+            <p>Trips</p>
+            <p>Review</p>
+            <p>
+              <i class="fa-solid fa-globe" style="color: #000000"></i> | USD
+            </p>
+            <button>Sign In</button>
+          </div>
+        </div>
+      </div>
+      <div class="nav__catogories__hovervisib">
+        <p>Hotels</p>
+        <p>Things to do</p>
+        <p>Restaurants</p>
+        <p>Flights</p>
+        <p>Holiday Homes</p>
+        <p>Forums</p>
+      </div>
+
+      <div class="section__1">
+        <div class="section__1__Heading">
+          <h1>Where To ?</h1>
+        </div>
+        <div class="section__1__catagory">
+          <p>
+            <i class="fa-regular fa-map" style="color: #000000"></i> Search All
+          </p>
+          <p><i class="fa-solid fa-bed" style="color: #000000"></i> Hotels</p>
+          <p>
+            <i class="fa-solid fa-camera" style="color: #000000"></i> Things to
+            Do
+          </p>
+          <p>
+            <i class="fa-solid fa-utensils" style="color: #000000"></i>
+            Restaurents
+          </p>
+          <p>
+            <i
+              class="fa-solid fa-plane fa-rotate-by"
+              style="color: #000000; --fa-rotate-angle: 330deg"
+            ></i>
+            Flights
+          </p>
+          <p>
+            <i class="fa-solid fa-building-columns" style="color: #000000"></i>
+            Holiday Homes
+          </p>
+        </div>
+        <div class="section__1__search">
+          <i class="fa-solid fa-magnifying-glass" style="color: #000000"></i>
+          <input type="text" />
+          <button>Search</button>
+        </div>
+      </div>
+
+      <!--Search bar and catogories / should add animations-->
+      <div class="section__2">
+        <img src="./Images/kayaking.jpg" alt="" height="400px" />
+        <div class="section__2__verticalline"></div>
+
+        <div class="section__2__Heading">
+          <h1>Book the Best Part of your Trip</h1>
+          <p>Browse to do Unforgettable things to do - Right Here</p>
+          <button>Find Things to Do</button>
+          <i class="fa-regular fa-circle-pause" style="color: #000000"></i>
+        </div>
+      </div>
+
+      <!--Find things to do by interest -->
+
+      <div class="section__3">
+        <div class="section__3__heading">
+          <h2>Find things to do by interest</h2>
+          <p>Whatever you're into, we’ve got it</p>
+        </div>
+        <div class="section__3__intrests">
+          <div>
+            <img src="./Images/outdoor.jpeg" alt="" />
+            <p>Outdoor</p>
+          </div>
+          <div>
+            <img src="./Images/food.jpeg" alt="" />
+            <p>Food</p>
+          </div>
+          <div>
+            <img src="./Images/culture.jpeg" alt="" />
+            <p>Culture</p>
+          </div>
+          <div>
+            <img src="./Images/water.jpeg" alt="" />
+            <p>Water</p>
+          </div>
+        </div>
+      </div>
+
+      <!--Must-dos in amazing places-->
+      <div class="section__4">
+        <div class="section__4__heading">
+          <h2>Must - do's in amazing places</h2>
+          <p>Experiences we think you’ll love</p>
+        </div>
+        <div class="section__4__places">
+          
+          <div class="section__4__card">
+            <img src="./Images/railway market.jpeg" alt="" />
+            <p class="section__4__places__loc">Bangkok</p>
+            <br />
+            <p>Half-Day Railway Market and Floating Market Tour in Thailand</p>
+            <br />
+            <div class="rating_no">
+              <p>4.8</p>
+              <div class="rating">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+              <p>(318)</p>
+            </div>
+            <p>from $183 per adult</p>
+            <i class="fa-regular fa-heart fa-lg"></i>
+          </div>
+
+          <div class="section__4__card">
+            <img src="./Images/fountainhas.jpeg" alt="" />
+            <p class="section__4__places__loc">Panjim</p>
+            <br />
+            <p>Fontainhas Heritage Walk by Make It Happen</p>
+            <br />
+            <div class="rating_no">
+              <p>4.9</p>
+              <div class="rating">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+              <p>(3256)</p>
+            </div>
+            <p>from $600 per adult</p>
+            <i class="fa-regular fa-heart fa-lg"></i>
+          </div>
+
+          <div class="section__4__card">
+            <img src="./Images/ninh binh.jpeg" alt="" />
+            <p class="section__4__places__loc">Hanoi</p>
+            <br />
+            <p>Ninh Binh Full-Day Tour from Hanoi to Hoa Lu, Tam Coc & Mua</p>
+            <br />
+            <div class="rating_no">
+              <p>5</p>
+              <div class="rating">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+              <p>(567)</p>
+            </div>
+            <p>from $259 per adult</p>
+            <i class="fa-regular fa-heart fa-lg"></i>
+          </div>
+
+          <div class="section__4__card">
+            <img src="./Images/tunnels.jpeg" alt="" />
+            <p class="section__4__places__loc">Ho Chi Minh City</p>
+            <br />
+            <p>Cu Chi Tunnels and Mekong Delta Full Day Tour</p>
+            <br />
+            <div class="rating_no">
+              <p>4.9</p>
+              <div class="rating">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+              <p>(389)</p>
+              <br />
+            </div>
+            <p>from $220 per adult</p>
+            <i class="fa-regular fa-heart fa-lg"></i>
+             
+          </div>
+       
+        </div>
+        
+      </div>
+    </div>
+
+    <!--Inspiration to get you going-->
+    <div class="Section__5">
+      <h2>Inspiration to get you going</h2>
+      <div class="section__5__images">
+        <div class="section__5__card">
+          <img src="./Images/stargaze.jpeg" alt="" />
+          <p>
+            <b
+              >Where to stargaze around the world,<br />
+              from Utah to Dubai</b
+            >
+          </p>
+          <i class="fa-regular fa-heart fa-lg"></i>
+        </div>
+        <div class="section__5__card">
+          <img src="./Images/paris.jpeg" alt="" />
+          <p>
+            <b
+              >Load up on art in Paris, NYC,<br />
+              and other culture hot spots</b
+            >
+          </p>
+          <i class="fa-regular fa-heart fa-lg"></i>
+        </div>
+        <div class="section__5__card">
+          <img src="./Images/cusine.jpeg" alt="" />
+          <p><b>13 cities, 13 unbelievable food trips</b></p>
+          <i class="fa-regular fa-heart fa-lg"></i>
+        </div>
+      </div>
+    </div>
+
+    <!--Things to do—right now  -->
+    <div class="section__6">
+      <div class="section__6__heading">
+        <h2>Things to do-right now</h2>
+        <p>Seasonal faves you don’t want to miss</p>
+      </div>
+      <div class="section__6__places">
+        <div class="section__6__card">
+          <img src="./Images/sorrento.jpeg" alt="" />
+          <p class="section__6__places__loc">Sorrento</p>
+          <br />
+          <p>Small-group boat tour of the Amalfi Coast from Sorrento</p>
+          <br />
+          <div class="rating_no">
+            <p>4.5</p>
+            <div class="rating">
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+            <p>(1289)</p>
+          </div>
+          <p>from $200 per adult</p>
+          <i class="fa-regular fa-heart fa-lg"></i>
+        </div>
+
+        <div class="section__6__card">
+          <img src="./Images/Albufeira.jpeg" alt="" />
+          <p class="section__6__places__loc">Albufeira</p>
+          <br />
+          <p>Dolphins Search and Benagil Caves from Albufeira</p>
+          <br />
+          <div class="rating_no">
+            <p>4.9</p>
+            <div class="rating">
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+            <p>(4567)</p>
+          </div>
+          <p>from $600 per adult</p>
+          <i class="fa-regular fa-heart fa-lg"></i>
+        </div>
+
+        <div class="section__6__card">
+          <img src="./Images/calagary.jpeg" alt="" />
+          <p class="section__6__places__loc">Calgary</p>
+          <br />
+          <p>Explore Banff National Park with Our Premium Day Tour</p>
+          <br />
+          <div class="rating_no">
+            <p>4.9</p>
+            <div class="rating">
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+            <p>(567)</p>
+          </div>
+          <p>from $1200 per adult</p>
+          <i class="fa-regular fa-heart fa-lg"></i>
+        </div>
+
+        <div class="section__6__card">
+          <img src="./Images/jackson.jpeg" alt="" />
+          <p class="section__6__places__loc">Jackson</p>
+          <br />
+          <p>Whitewater Rafting in Jackson Hole: Small Boat Excitement</p>
+          <br />
+          <div class="rating_no">
+            <p>4.9</p>
+            <div class="rating">
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+            <p>(3235)</p>
+            <br />
+          </div>
+          <p>from $2200 per adult</p>
+          <i class="fa-regular fa-heart fa-lg"></i>
+        </div>
+      </div>
+    </div>
+    <!--Iconic places you need to see-->
+    <div class="section__7">
+      <h2>Iconic places you need to see</h2>
+
+      <div class="section__7__img">
+        
+        <div class="section__7__cards">
+          <img src="./Images/rome.jpeg" alt="" />
+          <h2><b>Rome, Italy</b></h2>
+        </div>
+
+        <div class="section__7__cards">
+          <img src="./Images/swis.jpeg" alt="" />
+          <h2><b>Titlis Rotair, Switzerland</b></h2>
+        </div>
+
+        <div class="section__7__cards">
+          <img src="./Images/lasvagas.jpeg" alt="" />
+          <h2><b>Las Vagas, NV</b></h2>
+        </div>
+        
+        <div class="section__7__cards">
+          <img src="./Images/iceland.jpeg" alt="" />
+          <h2><b>Reykjavik, Iceland</b></h2>
+        </div>
+      </div>
+    </div>
+
+    <!--Browse themed collections-->
+      <div class="section__8">
+        <div class="section__8__img">
+          <img src="./Images/wanderer.jpeg" alt="">
+        </div>
+        <div class="section__8__content">
+          
+            <p><img src="./Images/logo.png" alt="">Sponsored by <span>Wanderlab</span></p>
+            <h1>Watch The Wanderer</h1>
+          <p>Tripadvisor's award-winning travel series, now <br>streaming on Amazon Prime</p>
+          <button>Learn More</button>
+        </div>
+      </div>
+
+      <!--Travelers choice best of the best -->
+      <div class="section__9">
+        <div class="section__9__content">
+          <h1><b>Travelers'<br>Choice <br> Awards Best <br>of the Best</b></h1>
+          <h2>Among our top 1% of places, stays, eats,<br> and experiences—decided by you.</h2>
+          <button>See the winners</button>
+        </div>
+        <div class="section__9__img">
+          <img src="./Images/yelow.jpeg" alt="">
+          <img src="./Images/yelow2.jpeg" alt="">
+        </div>
+      </div>
+    <!--Browse themed collection -->
+    <div class="section__10">
+      <h2>Browse themed collection</h2>
+
+      <div class="section__10__img">
+        
+        <div class="section__10__cards">
+          <img src="./Images/pizzar.jpeg" alt="" />
+          <h2><b>Pizza, Roman Style</b></h2>
+          <p>Classes and experiences for authentic pizza</p>
+        </div>
+
+        <div class="section__10__cards">
+          <img src="./Images/reef.jpeg" alt="" />
+          <h2><b>Get right to the reef</b></h2>
+          <p>Ways to explore the Great Barrier Reef</p>
+        </div>
+
+        <div class="section__10__cards">
+          <img src="./Images/canyon.jpeg" alt="" />
+          <h2><b>Take a Grand Diversion</b></h2>
+          <p>Tours to Grand Canyon from Vegas</p>
+        </div>
+        
+        <div class="section__10__cards">
+          <img src="./Images/London.jpeg" alt="" />
+          <h2><b>London, after Dark</b></h2>
+          <p>There's a lot to do when the sun goes</p>
+        </div>
+      </div>
+    </div>
+
+    <!--Footer-->
+
+    <div class="footer">
+      <div class="footer__vertial">
+      <div class="footer__vertial__cards">
+        <p class="head">About TripAdvisor</p>
+        <p> About Us</p>
+        <p>Press</p>
+        <p>Resources and Policies</p>
+        <p>Careers</p>
+        <p>Trust and Safety</p>
+        <p>Contact us</p>
+        <p>TripAdvisor Technology Blog</p> 
+      </div>
+
+      <div class="footer__vertial__cards">
+        <p class="head">Explore</p>
+        <p>Write a review</p>
+        <p>Add a Place</p>
+        <p>Join</p>
+        <p>Travelers' Choice</p>
+        <p>Help Centre</p>
+        <p>Travel Stories</p>
+      </div>
+
+      <div class="footer__vertial__cards">
+        <p class="head">Do Business With Us</p>
+        <p>Owners & DMO/CVB</p>
+        <p>Business Advantage</p>
+        <p>Sponsored Placements</p>
+        <p>Access our Content API</p>
+
+        <p class="head">Get The App</p>
+        <p>iPhone App</p>
+        <p>Android App</p>
+      </div>
+
+      <div class="footer__vertial__cards">
+        <p class="head">Tripadvisor Sites</p>
+        <p>Book tours and attraction tickets on Viator</p>
+</div>
+
+      </div>
+      <div class="footer__second">
+        <div class="second__one">
+            <div class="second__one__half">
+              <img src="./Images/logo.png" alt="" height="40px" width="40px">
+              <div class="sub">
+                <p class="small__f" style="font-size: 12px;">&copf; 2025 Trip Advisor LLC All rights reserved</p>
+                <p><b><span>Terms to Use</span> <span>Privacy and Cookies Statement</span> <span>Cookie consent</span> <span>Site Map</span> <span>How the site works</span><br> <span>Contact us</span> <span>Accessibility Statement</span> </b></p>
+              </div>
+              <div class="sub__2">
+                <div>
+               <select name="" id="">
+                <option value="">USD</option>
+                <option value="">INR</option>
+               </select>
+
+               <select name="" id="">
+                <option value="">India</option>
+               </select>
+               </div>
+               <div class="logoss">
+                  <i class="fa-brands fa-facebook" style="color: #000000;"></i>
+                  <i class="fa-brands fa-x-twitter" style="color: #000000;"></i>
+                  <i class="fa-brands fa-pinterest" style="color: #000000;"></i>
+                  <i class="fa-brands fa-instagram" style="color: #000000;"></i>
+                  <i class="fa-brands fa-youtube" style="color: #000000;"></i>
+                  <i class="fa-brands fa-tiktok" style="color: #000000;"></i>
+                  
+               </div>
+              </div>
+            </div>
+            <p>Tripadvisor LLC makes no guarantees for availability of prices advertised on our sites and applications. Listed prices may require a stay of a particular length or have blackout dates, qualifications or other applicable restrictions.</p>
+        </div>
         
 
-    </div>
-<div class="nav__catogories__hovervisib">
-            <p>Hotels</p>
-            <p>Things to do</p>
-            <p>Restaurants</p>
-            <p>Flights</p>
-            <p>Holiday Homes</p>
-            <p>Forums</p>
 
-        </div>
-<div class="section__1">
-    <div class="section__1__Heading">
-        <h1>Where To ?</h1>
+      </div>
     </div>
-    <div class="section__1__catagory">
-        <p><i class="fa-regular fa-map" style="color: #000000;"></i> Search All</p>
-        <p><i class="fa-solid fa-bed" style="color: #000000;"></i> Hotels</p>
-        <p><i class="fa-solid fa-camera" style="color: #000000;"></i> Things to Do</p>
-        <p><i class="fa-solid fa-utensils" style="color: #000000;"></i> Restaurents</p>
-        <p><i class="fa-solid fa-plane fa-rotate-by" style="color: #000000; --fa-rotate-angle: 330deg;"></i> Flights</p>
-        <p><i class="fa-solid fa-building-columns" style="color: #000000;"></i> Holiday Homes</p>
-    </div>
-    <div class="section__1__search">
-        <i class="fa-solid fa-magnifying-glass" style="color: #000000;"></i>
-         <input type="text">
-        <button>Search</button>
-    </div>
-</div>
-    <!--Search bar and catogories-->
-<!--Find things to do by interest -->
-<!--Must-dos in amazing places-->
-<!--Inspiration to get you going-->
-<!--Things to do—right now  -->
-<!--Iconic places you need to see-->
-<!--Browse themed collections-->
-<!--Footer-->
-</body>
+  </body>
 </html>
