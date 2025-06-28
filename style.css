@@ -1,5 +1,4 @@
-
-*{
+* {
   padding: 0;
   margin: 0;
 }
@@ -22,14 +21,17 @@ body {
   justify-content: space-around;
   position: sticky;
   top: 0;
- box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
- width: 100%;
- background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  width: 100%;
+  background-color: white;
+  z-index: 1;
 }
 
 .navbar__1 {
   display: flex;
   align-items: center;
+
   gap: 10px;
 }
 .navbar__1 img {
@@ -79,12 +81,10 @@ body {
 }
 /* Headding and where to section */
 .section__one {
-  
   display: flex;
   flex-direction: column;
   align-items: center; /* This centers children horizontally */
   gap: 20px;
-  
 }
 .section__1__Heading {
   margin-top: 100px;
@@ -151,7 +151,6 @@ body {
   visibility: hidden;
 }
 
-
 /* Section -2 Image section*/
 .section__2 {
   margin-top: 100px;
@@ -189,8 +188,6 @@ body {
     position: absolute;
     bottom: 0;
     right: 0;
-    
-    
   }
 }
 /*hover it should change to pointer */
@@ -203,13 +200,11 @@ body {
 .section__3 {
   display: flex;
   flex-direction: column;
-  
 
   margin-top: 100px;
   h2 {
     margin-bottom: 0;
   }
-  
 }
 .section__3__intrests {
   margin-top: 30px;
@@ -244,7 +239,6 @@ body {
   display: flex;
   flex-direction: column;
   margin-top: 80px;
-  
 
   p {
     display: block;
@@ -259,15 +253,12 @@ body {
   width: 300px;
   height: 300px;
   border-radius: 20px;
-
-  
 }
 .section__4__places {
   margin-top: 30px;
   display: flex;
   justify-content: space-between;
   gap: 10px;
- 
 }
 
 .section__4__places__loc {
@@ -277,10 +268,6 @@ body {
   margin-top: 5px;
   border-radius: 5px;
   vertical-align: top;
-
- 
-
-
 }
 .rating {
   display: flex;
@@ -297,10 +284,10 @@ body {
   gap: 10px;
   align-items: center;
 }
-.section__4__card{
+.section__4__card {
   position: relative;
-  i{
-    color: #F2F1EC;
+  i {
+    color: #f2f1ec;
     position: absolute;
     top: 25px;
     right: 15px;
@@ -308,55 +295,52 @@ body {
 }
 
 /*Inspiratiion to get you going*/
-.Section__5{
+.Section__5 {
   margin-top: 80px;
-  h2{
-    padding-left: 10% ;
+  h2 {
+    padding-left: 10%;
     padding-top: 20px;
   }
-  background-color: #F2F1EC;
-  img{
+  background-color: #f2f1ec;
+  img {
     width: 350px;
-  height: 280px;
-  border-radius: 20px;
+    height: 280px;
+    border-radius: 20px;
   }
-  
 }
-.section__5__images{
+.section__5__images {
   margin-top: 20px;
   padding-left: 10%;
   padding-right: 10%;
   display: flex;
   justify-content: space-between;
-  div{
-    p{
+  div {
+    p {
       margin-top: 20px;
       font-size: 16px;
       padding-bottom: 20px;
     }
     text-align: center;
   }
-  
 }
-.section__5__card{
+.section__5__card {
   position: relative;
-  i{
-    color: #F2F1EC;
+  i {
+    color: #f2f1ec;
     position: absolute;
     top: 25px;
     right: 15px;
   }
-
 }
 
 /*Section 6 Things to do—right now*/
-.section__6{
+.section__6 {
   margin-left: 10%;
   margin-right: 10%;
   display: flex;
   flex-direction: column;
   margin-top: 80px;
-   p {
+  p {
     display: block;
     margin-top: 5px;
   }
@@ -374,7 +358,6 @@ body {
   display: flex;
   justify-content: space-between;
   gap: 10px;
-  
 }
 
 .section__6__places__loc {
@@ -384,7 +367,6 @@ body {
   margin-top: 5px;
   border-radius: 5px;
   vertical-align: top;
-  
 }
 .rating {
   display: flex;
@@ -401,62 +383,57 @@ body {
   gap: 10px;
   align-items: center;
 }
-.section__6__card{
+.section__6__card {
   position: relative;
-  i{
-    color: #F2F1EC;
+  i {
+    color: #f2f1ec;
     position: absolute;
     top: 25px;
     right: 15px;
   }
-  
 }
 /*Section 7*/
-.section__7{
+.section__7 {
   margin-top: 80px;
   padding-left: 10%;
-  padding-right: 10% ;
-  
-  img{
-     width: 300px;
-  height: 300px;
-  border-radius: 20px;
+  padding-right: 10%;
+
+  img {
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
   }
 }
-.section__7__img{
+.section__7__img {
   margin-top: 20px;
   display: flex;
   gap: 5px;
   justify-content: space-around;
-  div{
-    p{
+  div {
+    p {
       margin-top: 20px;
       font-size: 16px;
       padding-bottom: 20px;
     }
-    
-    
   }
-  
 }
-.section__7__cards{
+.section__7__cards {
   position: relative;
-  h2{
+  h2 {
     position: absolute;
     bottom: 5%;
     left: 7%;
     color: white;
-    
   }
 }
 
 /* Section 8 content*/
 
-.section__8{
+.section__8 {
   margin-top: 80px;
   margin-left: 10%;
   margin-right: 10%;
-  background-color: #F2ECF9;
+  background-color: #f2ecf9;
   display: flex;
   align-items: stretch; /*will stretch the other container to the same height of the nearest one if it is uneven */
 }
@@ -464,33 +441,30 @@ body {
   padding: 20px;
   height: 600px;
   width: 600px;
-  
 }
 .section__8__content {
   display: flex;
   flex-direction: column;
   text-align: center;
   width: 100%;
-  justify-content: center; 
+  justify-content: center;
   align-items: center;
 
-  span{
+  span {
     text-decoration: underline;
   }
 
-  img{
+  img {
     height: 20px;
     width: 20px;
-    margin-right:5px
+    margin-right: 5px;
   }
-
- 
 }
-.section__8__content p{
+.section__8__content p {
   color: #555555;
   margin-top: 10px;
 }
-.section__8__content button{
+.section__8__content button {
   display: inline-block;
   text-align: center;
   font-size: 18px;
@@ -502,24 +476,23 @@ body {
 }
 
 /*section 9 cover*/
-.section__9{
-  background-color: #FFF7E1;
+.section__9 {
+  background-color: #fff7e1;
   margin-top: 80px;
   display: flex;
   flex-direction: row;
   padding-left: 10%;
   padding-right: 10%;
 }
-.section__9__content{
+.section__9__content {
   padding-top: 60px;
   padding-bottom: 60px;
-  h1{
+  h1 {
     font-size: 50px;
-    
   }
 }
 
-.section__9__content button{
+.section__9__content button {
   display: inline-block;
   text-align: center;
   font-size: 18px;
@@ -532,115 +505,151 @@ body {
 .section__9__img {
   display: flex;
   gap: 5px;
-  img{
-  height: 450px;
-  width: 400px;
-  margin-top:15px ;
+  img {
+    height: 450px;
+    width: 400px;
+    margin-top: 15px;
   }
   padding-left: 60px;
   opacity: 0.5;
-  
 }
 
 /*Section 10 similar to section 7 so changed only the names and image in it */
 
-.section__10{
+.section__10 {
   margin-top: 80px;
   padding-left: 10%;
-  padding-right: 10% ;
-  
-  img{
-     width: 300px;
-  height: 300px;
-  border-radius: 20px;
+  padding-right: 10%;
+
+  img {
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+
   }
 }
-.section__10__img{
+.section__10__img {
+
   margin-top: 20px;
   display: flex;
   gap: 5px;
   justify-content: space-around;
-  div{
-    p{
+  div {
+    p {
       margin-top: 20px;
       font-size: 16px;
       padding-bottom: 20px;
     }
-    
-    
   }
-  
 }
-.section__10__cards{
+.section__10__cards {
   position: relative;
-  h2{
+  h2 {
     position: absolute;
     bottom: 25%;
     left: 7%;
     color: white;
-    
   }
   color: rgb(40, 39, 39);
 }
+
 /*footer*/
-.footer{
+.footer {
   margin-top: 60px;
-  background-color: #F2F2F2 ;
+  background-color: #f2f2f2;
   padding-left: 10%;
   padding-right: 10%;
-  
 }
-.footer__vertial{
+.footer__vertial {
   display: flex;
   padding-top: 20px;
-  
+
   justify-content: space-between;
   color: rgb(92, 91, 91);
-  
 }
-.footer__vertial p{
+.footer__vertial p {
   padding-bottom: 5px;
 }
 
-.footer__vertial .head{
+.footer__vertial .head {
   font-size: 18px;
   padding-bottom: 10px;
   padding-top: 10px;
 }
 
-.sub{
+.sub {
   display: flex;
   flex-direction: column;
 
-  span{
+  span {
     text-decoration: underline;
     font-weight: 400;
     padding-right: 10px;
   }
+
 }
-.second__one__half{
+.sub span:hover{
+  cursor: pointer;
+}
+.second__one__half {
   display: flex;
   gap: 20px;
 }
-.second__one{
+.second__one {
   color: #555555;
- display: flex; 
- flex-direction: column;
- gap: 10px;
-}
-.sub__2{
   display: flex;
   flex-direction: column;
   gap: 10px;
-gap: 10px;
-  select{
-    width:160px;
-    height:40px;
+}
+.sub__2 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  gap: 10px;
+  select {
+    width: 160px;
+    height: 40px;
     border-radius: 20px;
     color: #000000;
     padding-left: 10px;
   }
 }
-.logoss i{
+.logoss i {
   margin-left: 20px;
 }
+
+/*Adding hover attributes*/
+.logoss i:hover {
+ cursor: pointer;
+}
+.footer__vertial__cards:hover{
+  cursor: pointer;
+}
+
+/*sectin 10*/
+.section__10__cards:hover{
+cursor: pointer;
+img{
+  opacity: .8;
+}
+}
+
+/*section 9*/
+.section__9__content button:hover{
+cursor: pointer;
+}
+
+/*section 8*/
+.section__8__content button:hover{
+cursor: pointer;
+}
+
+/*section 7*/
+.section__7__cards:hover{
+  cursor: pointer;
+img{
+  opacity: .8;
+}
+}
+
+/*section 6*/
